@@ -102,7 +102,7 @@ public class Rating extends AuditableAbstractAggregateRoot<Rating> {
      * @return the product id
      */
     public Long getProductId() {
-        return this.productId.id();
+        return this.productId.productId();
     }
 
     /**

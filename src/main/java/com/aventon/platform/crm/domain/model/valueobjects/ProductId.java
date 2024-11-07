@@ -10,16 +10,16 @@ import jakarta.persistence.Embeddable;
  * @author Gonzlao Quedena
  */
 @Embeddable
-public record ProductId(Long id) {
+public record ProductId(Long productId) {
 
     /**
      * Constructor
      * @summary
      * The constructor validates the product id to ensure it is not null or empty
-     * @param id the product id
+     * @param productId the product id
      */
     public ProductId {
-        if (id == null || id <= 0) {
+        if (productId == null || productId <= 0) {
             throw new IllegalArgumentException("Invalid product id");
         }
     }
