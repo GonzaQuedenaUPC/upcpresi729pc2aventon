@@ -1,4 +1,4 @@
-package com.aventon.platform.crm.domain.model.valueobjects;
+package com.aventon.platform.shared.domain.model.valueobjects;
 
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.Email;
