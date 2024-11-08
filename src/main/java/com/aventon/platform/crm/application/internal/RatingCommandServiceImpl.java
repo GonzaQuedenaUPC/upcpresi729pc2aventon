@@ -11,14 +11,37 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * Rating Command Service Implementation
+ * @summary
+ * This class implements the rating command service
+ * @author Gonzalo Quedena
+ */
 @Service
 public class RatingCommandServiceImpl implements RatingCommandService {
+
+    /**
+     * Rating Repository
+     */
     private final RatingRepository ratingRepository;
 
+    /**
+     * Constructor
+     * @summary
+     * The constructor initializes the rating repository
+     * @param ratingRepository the rating repository
+     */
     public RatingCommandServiceImpl(RatingRepository ratingRepository) {
         this.ratingRepository = ratingRepository;
     }
 
+    /**
+     * Handle Create Rating Command
+     * @summary
+     * This method handles the create rating command
+     * @param command the create rating command
+     * @return the optional rating
+     */
     @Override
     public Optional<Rating> handle(CreateRatingCommand command) {
 

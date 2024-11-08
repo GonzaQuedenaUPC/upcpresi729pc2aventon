@@ -13,6 +13,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Product Ratings Controller
+ * @summary
+ * This class represents the product ratings controller
+ * @author Gonzalo Quedena
+ */
 @RestController
 @RequestMapping(value ="api/v1/products", produces = MediaType.APPLICATION_JSON_VALUE)
 @Tag(name ="Product Ratings", description = "The Product Ratings API")
